@@ -20,6 +20,9 @@ public class LoginTest {
 	public void dologin() {
 		driver.get("http://gmail.com");
 		driver.findElement(By.id("identifierId")).sendKeys("way2automation@gmail.com");
+	driver.findElement(By.xpath("//*[@id=\"identifierNext\"]/div/span/span")).click();
+	
+	
 	}
 	
 	@AfterTest
